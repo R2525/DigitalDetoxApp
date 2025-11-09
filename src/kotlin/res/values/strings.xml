@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Digital Detox</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_title">Boost your focus with digital detox missions</string>
+    <string name="onboarding_subtitle">Train your prefrontal cortex and improve concentration through guided digital detox sessions</string>
+    <string name="onboarding_feature_1">Block distracting apps automatically</string>
+    <string name="onboarding_feature_2">Track your focus improvement</string>
+    <string name="onboarding_feature_3">Build healthy digital habits</string>
+    <string name="onboarding_button">Get Started</string>
+    <string name="onboarding_terms">By continuing, you agree to our Terms of Service and Privacy Policy</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard_greeting">Hi %s</string>
+    <string name="dashboard_ready_title">Ready for focus training?</string>
+    <string name="dashboard_ready_subtitle">Let\'s strengthen your prefrontal cortex</string>
+    <string name="dashboard_progress">Today\'s Progress</string>
+    <string name="dashboard_focus_score">Focus Score</string>
+    <string name="dashboard_screen_time">Screen Time</string>
+    <string name="dashboard_blocked_apps">Blocked Apps</string>
+    <string name="dashboard_mission">Mission</string>
+    <string name="dashboard_focus_trend">Focus Trend</string>
+    <string name="dashboard_improvement">🧠 Prefrontal focus improved by %d%% this week</string>
+    <string name="dashboard_start_mission">Start Today\'s Mission</string>
+    
+    <!-- Mission -->
+    <string name="mission_title">Digital Detox Mission</string>
+    <string name="mission_active">Session Active</string>
+    <string name="mission_ready">Ready to Start</string>
+    <string name="mission_complete">Mission Complete! 🎉</string>
+    <string name="mission_block_apps">Block %d apps for 2 hours</string>
+    <string name="mission_apps_blocked">%d apps will be blocked during this session</string>
+    <string name="mission_select_apps">Select apps to block in the settings below</string>
+    <string name="mission_start">Start Mission</string>
+    <string name="mission_pause">Pause Mission</string>
+    <string name="mission_reset">Reset</string>
+    <string name="mission_app_blocking">App Blocking Settings</string>
+    <string name="mission_customize">Customize</string>
+    <string name="mission_no_apps">No apps selected for blocking</string>
+    <string name="mission_add_more">Add More Apps to Block</string>
+    <string name="mission_progress">Session Progress</string>
+    <string name="mission_time_elapsed">Time Elapsed</string>
+    <string name="mission_blocked_attempts">Blocked Attempts</string>
+    <string name="mission_apps_protected">Apps Protected</string>
+    <string name="mission_focus_tips">Focus Tips</string>
+    <string name="mission_tip_1">• Place your phone face down or in another room</string>
+    <string name="mission_tip_2">• Use the 25-minute Pomodoro technique for deep work</string>
+    <string name="mission_tip_3">• Reward yourself after completing the mission</string>
+    <string name="mission_tip_4">• Stay hydrated and take short breaks every hour</string>
+    
+    <!-- Report -->
+    <string name="report_title">Weekly Report</string>
+    <string name="report_subtitle">Your progress summary</string>
+    <string name="report_excellent">Excellent Progress!</string>
+    <string name="report_habits">You\'re building strong focus habits</string>
+    <string name="report_this_week">This Week\'s Stats</string>
+    <string name="report_avg_screen_time">Avg Screen Time</string>
+    <string name="report_current_streak">Current Streak</string>
+    <string name="report_apps_blocked">Apps Blocked</string>
+    <string name="report_focus_score">Focus Score</string>
+    <string name="report_brain_health">Brain Health Update</string>
+    <string name="report_prefrontal">Prefrontal cortex analysis</string>
+    <string name="report_improvement">🧠 Your focus is improving and your prefrontal cortex is strengthening. Consistent digital detox sessions are rewiring your brain for better concentration.</string>
+    <string name="report_attention_span">Attention Span</string>
+    <string name="report_focus_quality">Focus Quality</string>
+    <string name="report_productivity">Productivity</string>
+    <string name="report_detailed_history">Review Detailed History</string>
+    <string name="report_training_tips">Focus Training Tips</string>
+    <string name="report_week_champion">Week 1 Champion!</string>
+    <string name="report_congrats">Congratulations on completing your first week of digital detox training.</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Customize your digital detox</string>
+    <string name="settings_app_blocking">App Blocking</string>
+    <string name="settings_apps_blocked">%d apps currently blocked</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_dark_mode">Dark mode</string>
+    <string name="settings_light_theme">Switch to light theme</string>
+    <string name="settings_dark_theme">Switch to dark theme</string>
+    <string name="settings_quick">Quick Settings</string>
+    <string name="settings_auto_block">Auto-block during missions</string>
+    <string name="settings_auto_block_desc">Automatically block selected apps</string>
+    <string name="settings_notifications">Mission notifications</string>
+    <string name="settings_notifications_desc">Get reminders and updates</string>
+    <string name="settings_vibration">Vibration feedback</string>
+    <string name="settings_vibration_desc">Haptic feedback for interactions</string>
+    <string name="settings_blocking_management">App Blocking Management</string>
+    <string name="settings_manage_apps">Manage All Apps</string>
+    <string name="settings_recently_blocked">Recently blocked apps:</string>
+    <string name="settings_no_apps_blocked">No apps blocked</string>
+    <string name="settings_select_apps">Select Apps to Block</string>
+    <string name="settings_mission_settings">Mission Settings</string>
+    <string name="settings_default_duration">Default mission duration</string>
+    <string name="settings_currently_2_hours">Currently: 2 hours</string>
+    <string name="settings_reminder_frequency">Reminder frequency</string>
+    <string name="settings_every_30_min">Every 30 minutes</string>
+    <string name="settings_break_blocks">Break app blocks</string>
+    <string name="settings_require_confirmation">Require confirmation</string>
+    <string name="settings_account">Account & Support</string>
+    <string name="settings_export_data">Export usage data</string>
+    <string name="settings_privacy">Privacy settings</string>
+    <string name="settings_help">Help & feedback</string>
+    <string name="settings_reset">Reset all settings</string>
+    <string name="settings_dark_mode_active">Dark Mode Active</string>
+    <string name="settings_light_mode_active">Light Mode Active</string>
+    <string name="settings_dark_mode_desc">Easier on the eyes in low light conditions</string>
+    <string name="settings_light_mode_desc">Clear visibility in bright environments</string>
+    <string name="settings_version">Version 1.0.0</string>
+    
+    <!-- Blocking Settings -->
+    <string name="blocking_title">App Blocking</string>
+    <string name="blocking_selected">%d of %d apps selected</string>
+    <string name="blocking_search">Search apps…</string>
+    <string name="blocking_all_apps">Block All Apps</string>
+    <string name="blocking_unblock_all_apps">Unblock All Apps</string>
+    <string name="blocking_allow_all">Allow access to all applications</string>
+    <string name="blocking_block_all_desc">Block access to all applications during missions</string>
+    <string name="blocking_blocked">Blocked</string>
+    <string name="blocking_allowed">Allowed</string>
+    <string name="blocking_categories">Categories</string>
+    <string name="blocking_apps_count">%d apps</string>
+    <string name="blocking_blocked_count">%d blocked</string>
+    <string name="blocking_block_all">Block All</string>
+    <string name="blocking_unblock_all">Unblock All</string>
+    <string name="blocking_no_results">No apps found</string>
+    <string name="blocking_no_results_desc">Try adjusting your search query or check back later for more apps.</string>
+    <string name="blocking_clear_search">Clear Search</string>
+    <string name="blocking_protection_active">Block Protection Active</string>
+    <string name="blocking_protection_desc">Selected apps will be blocked during your digital detox missions</string>
+    <string name="blocking_save_continue">Save & Continue</string>
+    <string name="blocking_reset_all">Reset All</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_mission">Mission</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_settings">Settings</string>
+    
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="active">Active</string>
+    <string name="complete">Complete</string>
+    <string name="blocked">Blocked</string>
+    
+    <!-- Categories -->
+    <string name="category_social_media">Social Media</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_communication">Communication</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_gaming">Gaming</string>
+    <string name="category_productivity">Productivity</string>
+    <string name="category_navigation">Navigation</string>
+</resources>
