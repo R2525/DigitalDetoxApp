@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { OnboardingScreen } from "./components/OnboardingScreen";
-import { DashboardScreen } from "./components/DashboardScreen";
+import { DashboardScreen } from "./components/DashboardScreen2";
 import { MissionDetailScreen } from "./components/MissionDetailScreen";
 import { ReportScreen } from "./components/ReportScreen";
 import { SettingsScreen } from "./components/SettingsScreen";

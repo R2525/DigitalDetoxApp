@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
 import { Avatar, AvatarFallback } from './ui/avatar';
@@ -26,6 +27,20 @@ export function DashboardScreen({ onNavigateToMission }: DashboardScreenProps) {
     day: 'numeric' 
   });
 
+  // Header and summary state
+  const [userName, setUserName] = useState('Siwoo');
+  const [focusScore, setFocusScore] = useState<number>(3.0);
+  const [screenTime, setScreenTime] = useState<string>('3h 15m');
+  const [screenTimeChange, setScreenTimeChange] = useState<number>(-25);
+  const [blockedAppsCount, setBlockedAppsCount] = useState<number>(4);
+  const [missionDone, setMissionDone] = useState<number>(2);
+  const [missionTotal, setMissionTotal] = useState<number>(2);
+  const [missionStatus] = useState<'Complete' | 'In Progress' | 'Pending'>('Complete');
+
+  // Feedback state
+  const [improvementPercent, setImprovementPercent] = useState<number>(10);
+  const filledStars = Math.round(focusScore);
+
   return (
     <div className="h-full overflow-y-auto">
       {/* Android-style app bar */}
@@ -38,7 +53,7 @@ export function DashboardScreen({ onNavigateToMission }: DashboardScreenProps) {
               </AvatarFallback>
             </Avatar>
             <div>
-              <p className="text-base font-medium">Hi Siwoo</p>
+              <p className="text-base font-medium">Hi {userName}</p>
               <p className="text-sm text-muted-foreground">{today}</p>
             </div>
           </div>
@@ -74,7 +89,7 @@ export function DashboardScreen({ onNavigateToMission }: DashboardScreenProps) {
                     <Star
                       key={star}
                       className={`w-4 h-4 ${
-                        star <= 3 ? 'fill-current text-primary' : 'text-muted'
+                        star <= filledStars ? 'fill-current text-primary' : 'text-muted'
                       }`}
                     />
                   ))}
@@ -82,18 +97,18 @@ export function DashboardScreen({ onNavigateToMission }: DashboardScreenProps) {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Focus Score</p>
-                <p className="text-lg font-medium">3/5</p>
+                <p className="text-lg font-medium">{focusScore}/5</p>
               </div>
             </Card>
 
             <Card className="p-4 space-y-3">
               <div className="flex items-center justify-between">
                 <Clock className="w-5 h-5 text-blue-600" />
-                <Badge variant="secondary" className="text-xs">-25%</Badge>
+                <Badge variant="secondary" className="text-xs">{screenTimeChange > 0 ? `+${screenTimeChange}%` : `${screenTimeChange}%`}</Badge>
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Screen Time</p>
-                <p className="text-lg font-medium">3h 15m</p>
+                <p className="text-lg font-medium">{screenTime}</p>
               </div>
             </Card>
 
@@ -104,18 +119,20 @@ export function DashboardScreen({ onNavigateToMission }: DashboardScreenProps) {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Blocked Apps</p>
-                <p className="text-lg font-medium">4</p>
+                <p className="text-lg font-medium">{blockedAppsCount}</p>
               </div>
             </Card>
 
             <Card className="p-4 space-y-3">
               <div className="flex items-center justify-between">
                 <Target className="w-5 h-5 text-orange-600" />
-                <Badge className="text-xs bg-green-100 text-green-800">Complete</Badge>
+                <Badge className={`text-xs ${missionStatus === 'Complete' ? 'bg-green-100 text-green-800' : missionStatus === 'In Progress' ? 'bg-yellow-100 text-yellow-800' : 'bg-gray-100 text-gray-800'}`}>
+                  {missionStatus}
+                </Badge>
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Mission</p>
-                <p className="text-lg font-medium">2/2</p>
+                <p className="text-lg font-medium">{missionDone}/{missionTotal}</p>
               </div>
             </Card>
           </div>
@@ -151,7 +168,12 @@ export function DashboardScreen({ onNavigateToMission }: DashboardScreenProps) {
           
           <div className="bg-muted/30 rounded-lg p-3">
             <p className="text-sm text-muted-foreground">
-              ðŸ§  Prefrontal focus improved by 10% this week
+              ?§  Prefrontal focus improved by {improvementPercent}% this week
+            <div className="flex justify-end mt-2">
+              <Button variant="outline" size="sm" className="h-8 rounded-lg" onClick={() => console.log('View Brain Growth clicked')}>
+                View Brain Growth
+              </Button>
+            </div>
             </p>
           </div>
         </Card>
@@ -182,3 +204,4 @@ function Brain({ className }: { className?: string }) {
     </svg>
   );
 }
+

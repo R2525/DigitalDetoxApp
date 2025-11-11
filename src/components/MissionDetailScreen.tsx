@@ -23,12 +23,37 @@ export function MissionDetailScreen({ onBack, onNavigateToBlockingSettings }: Mi
     { name: 'Facebook', icon: Play, blocked: false, color: 'text-blue-600', attempts: 0 },
   ]);
 
+  const getTodayKey = () => {
+    const now = new Date();
+    const yyyy = now.getFullYear();
+    const mm = String(now.getMonth() + 1).padStart(2, '0');
+    const dd = String(now.getDate()).padStart(2, '0');
+    return `digital-detox-blocked-${yyyy}${mm}${dd}`;
+  };
+
+  const incrementTodayBlockedSeconds = () => {
+    try {
+      const key = getTodayKey();
+      const current = Number(localStorage.getItem(key) || '0');
+      localStorage.setItem(key, String(current + 1));
+    } catch (_e) {
+      // ignore storage errors in demo environment
+    }
+  };
+
   useEffect(() => {
     let interval: NodeJS.Timeout;
     
     if (isActive && timeRemaining > 0) {
       interval = setInterval(() => {
-        setTimeRemaining((time) => time - 1);
+        setTimeRemaining((time) => {
+          if (time > 0) {
+            // Count towards today's cumulative blocked time while mission runs
+            incrementTodayBlockedSeconds();
+            return time - 1;
+          }
+          return time;
+        });
       }, 1000);
     }
 
