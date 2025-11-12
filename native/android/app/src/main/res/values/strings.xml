@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Digital Detox</string>
+    <string name="accessibility_service_desc">Blocks selected apps to help you stay focused.</string>
+    <string name="block_title">Focus Mode</string>
+    <string name="block_message">This app is blocked right now.</string>
+    <string name="btn_request_usage">Grant Usage Access</string>
+    <string name="btn_request_overlay">Grant Overlay Permission</string>
+    <string name="btn_open_accessibility">Open Accessibility Settings</string>
+    <string name="btn_test_overlay">Test Overlay</string>
+</resources>
+
