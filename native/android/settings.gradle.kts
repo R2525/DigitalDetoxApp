@@ -1,3 +1,5 @@
+import kotlin.io.path.name
+
 pluginManagement {
     repositories {
         google()
@@ -5,13 +7,12 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-
 dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
     }
 }
-
-rootProject.name = "DigitalDetoxNative"
-include(":app")
+rootProject.name = "DigitalDetoxApp"
+include(":DigitalDetoxApp") // Or whatever your module is named
